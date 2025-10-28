@@ -144,6 +144,11 @@ body {
   color: var(--muted);
 }
 
+/* qr codes */
+.xxx {
+  margin: 5px;
+}
+
 /* Accessibilità */
 :focus-visible {
   outline: 2px solid var(--accent);
