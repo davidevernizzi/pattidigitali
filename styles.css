@@ -4,6 +4,7 @@
   --bg-muted: #f5f7fb;
   --text: #0f172a;
   --muted: #475569;
+  --faded: #adb1b8;
   --border: #e5e7eb;
   --accent: #3b82f6;       /* blu vivace, non eccessivo */
   --accent-dark: #2563eb;
@@ -45,14 +46,14 @@ body {
   color: var(--accent);
   text-decoration: none;
 }
-.nav a {
+.nav {
   color: var(--muted);
   text-decoration: none;
   margin-left: 16px;
   padding: 6px 8px;
   border-radius: 8px;
 }
-.nav a:hover, .nav a:focus-visible {
+.nav *:hover, .nav a:focus-visible {
   color: var(--accent);
   background: #f0f6ff;
   outline: none;
@@ -131,6 +132,14 @@ body {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.future h3 {
+  color: var(--faded);
 }
 
 /* Footer */
