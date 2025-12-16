@@ -6,21 +6,32 @@
   --muted: #475569;
   --faded: #adb1b8;
   --border: #e5e7eb;
-  --accent: #3b82f6;       /* blu vivace, non eccessivo */
+  --accent: #2675BB;       /* blu vivace, non eccessivo */
+  --contrast: #E58233;
   --accent-dark: #2563eb;
   --accent-light: #eef5ff; /* tinta chiara per sezioni */
   --radius: 12px;
   --shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
 }
 
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.5;
+}
+
+strong {
+  color: var(--accent);
 }
 
 /* Layout */
@@ -33,7 +44,7 @@ body {
 /* Header */
 .site-header {
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
 }
 .header-inner {
   display: flex;
@@ -42,6 +53,7 @@ body {
   padding: 14px 0;
 }
 .brand {
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   color: var(--accent);
   text-decoration: none;
@@ -61,7 +73,7 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--accent-light), #ffffff);
+  /* background: linear-gradient(135deg, var(--accent-light), #ffffff); */
   padding: 64px 0;
 }
 .hero h1 {
@@ -73,6 +85,9 @@ body {
   color: var(--muted);
   font-size: 18px;
   margin: 0 0 20px 0;
+}
+.title {
+  color: var(--contrast);
 }
 .actions {
   display: flex;
@@ -114,6 +129,11 @@ body {
   grid-template-columns: 1fr;
   gap: 16px;
 }
+.grid2 {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
 @media (min-width: 768px) {
   .grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -129,6 +149,10 @@ body {
   margin: 0 0 8px 0;
   font-size: 20px;
 }
+/* .card img {
+  width: 10%;
+  margin: 0 0 8px 0;
+} */
 .card p {
   margin: 0;
   color: var(--muted);
@@ -141,6 +165,42 @@ body {
 .future h3 {
   color: var(--faded);
 }
+
+.card-patto {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns:  10% 1fr;
+}
+.number {
+  display: grid;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.number-img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.number-span {
+  font-family: "Outfit", sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0.25em;
+  margin-left: 40%;
+  z-index: 999;
+  /* background-color: red; */
+}
+
 
 /* Footer */
 .site-footer {
