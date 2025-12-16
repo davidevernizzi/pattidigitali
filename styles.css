@@ -61,6 +61,10 @@ strong {
 .nav {
   color: var(--muted);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  /* This also centers items vertically by default, or use align-items for control */
+  align-items: center;
   margin-left: 16px;
   padding: 6px 8px;
   border-radius: 8px;
@@ -69,6 +73,9 @@ strong {
   color: var(--accent);
   background: #f0f6ff;
   outline: none;
+}
+.nav img {
+  height: 5em;
 }
 
 /* Hero */
@@ -129,13 +136,13 @@ strong {
   grid-template-columns: 1fr;
   gap: 16px;
 }
-.grid2 {
+.twocols {
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
-  .grid2 { grid-template-columns: repeat(2, 1fr); }
+  .twocols { grid-template-columns: repeat(2, 1fr); }
   .grid { grid-template-columns: repeat(3, 1fr); }
 }
 .card {
@@ -167,7 +174,8 @@ strong {
   color: var(--faded);
 }
 
-.card-patto {
+/* Card Inner pages */
+.card-p {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -182,14 +190,12 @@ strong {
   margin-right: 5px;
   margin-top: 10px;
 }
-
-.number-img {
+.number img {
   grid-column: 1;
   grid-row: 1;
   width: 100%;
 }
-
-.number-span {
+.number span {
   font-family: "Outfit", sans-serif;
   color: white;
   font-weight: bolder;
@@ -201,7 +207,9 @@ strong {
   z-index: 999;
   /* background-color: red; */
 }
+.number p {
 
+}
 
 /* Footer */
 .site-footer {
