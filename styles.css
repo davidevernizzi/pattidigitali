@@ -7,8 +7,9 @@
   --faded: #adb1b8;
   --border: #e5e7eb;
   --accent: #2675BB;       /* blu vivace, non eccessivo */
-  --contrast: #E58233;
   --accent-dark: #2563eb;
+  --contrast: #E58233;
+  --contrast-dark: #E47033;
   --accent-light: #eef5ff; /* tinta chiara per sezioni */
   --radius: 12px;
   --shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
@@ -115,6 +116,14 @@ strong {
   transform: translateY(-1px);
   outline: none;
 }
+.cta{
+  background: var(--contrast)
+}
+.cta:hover, .cta:focus-visible {
+  background: var(--contrast-dark);
+  transform: translateY(-1px);
+  outline: none;
+}
 .link {
   display: inline-block;
   color: var(--accent);
@@ -129,7 +138,7 @@ strong {
 
 /* Features */
 .features {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .grid {
   display: grid;
