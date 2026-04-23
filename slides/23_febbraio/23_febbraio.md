@@ -81,13 +81,14 @@ style: |
 # 🛡️ Best Practices di Utilizzo
 
 ## 📢 **Limitare le notifiche**
-- Sono progettate per distrarci e iniziare il feedback loop della dopamina 
+- Sono progettate per distrarci e iniziare il feedback loop della dopamina
+- Usare le modalità "non disturbare" o crearne di nuove può aiutare
 
 ## 💳 **Disabilitare acquisti in-app**
 - Facilitano i comportamenti che creano dipendenza ed è facile spendere troppo
 
 ## 🎮 **Evitare se possible giochi free to play e servizi gratuiti**
-- Implementano funzionalità discutibili per convincere a spendere
+- Implementano funzionalità discutibili per convincerci a spendere (timewall, lootbox, FOMO, endless scroll, autoplay ...)
 
 ---
 
